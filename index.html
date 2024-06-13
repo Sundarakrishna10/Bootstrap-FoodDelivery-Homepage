@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDelivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></link>
+    <link href="./styles.css  "rel="stylesheet" ></link>
+</head>
+<body>
+    
+<!--code for responsive header layout...-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./fast-delivery.png" style="height: 35px; width: 35px;" alt="Logo"/>
+                <span class="ml-2">iDeliver</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <select class="form-control">
+                            <option>Location</option>
+                        </select>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mx-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <button class="btn btn-primary my-2 my-sm-0 ml-lg-2">Login</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container my-2">
+        <div class="row">
+            
+            <div class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading">Cuisines</h6>
+                    <input class="form-control mb-2" type="text" placeholder="Search for cuisines">
+                    <ul class="nav flex-column">
+                        <li class="my-2">
+                            <img src="./drinks.png" class="me-4 sidebarimg"/>
+                            <a href="#">Beverages</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./pizza.png" class="me-4 sidebarimg"/>
+                            <a href="#">Pizza</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./Chinese.png" class="me-4 sidebarimg"/>
+                            <a href="#">Chinese</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./burger.png" class="me-4 sidebarimg"/>
+                            <a href="#">Burger</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./European.png" class="me-4 sidebarimg"/>
+                            <a href="#">European</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./French.png" class="me-4 sidebarimg"/>
+                            <a href="#">French</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./Mexican.png" class="me-4 sidebarimg"/>
+                            <a href="#">Mexican</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- side nav for mobile view -->
+            <div class="d-md-none bg-light sidebar-horizontal w-100">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading text-center">Cuisines</h6>
+                    <input class="form-control mb-2" type="text" placeholder="Search for cuisines">
+                    <ul class="nav flex-column flex-md-row">
+                        <li class="my-2">
+                            <img src="./drinks.png" class="me-4 sidebarimg"/>
+                            <a href="#">Beverages</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./pizza.png" class="me-4 sidebarimg"/>
+                            <a href="#">Pizza</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./Chinese.png" class="me-4 sidebarimg"/>
+                            <a href="#">Chinese</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./burger.png" class="me-4 sidebarimg"/>
+                            <a href="#">Burger</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./European.png" class="me-4 sidebarimg"/>
+                            <a href="#">European</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./French.png" class="me-4 sidebarimg"/>
+                            <a href="#">French</a>
+                        </li>
+                        <li class="my-2">
+                            <img src="./Mexican.png" class="me-4 sidebarimg"/>
+                            <a href="#">Mexican</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main class="col">
+                <div class="nav-bar d-flex justify-content-between align-items-center my-2">
+                    <h2 class="mb-0">Home / Restaurants</h2>
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="mx-2"><a href="#">sort</a></li>
+                        <li class="mx-2"><a href="#">rating</a></li>
+                        <li class="mx-2"><a href="#">costPerPerson</a></li>
+                        <li class="mx-2"><a href="#">order type</a></li>
+                    </ul>
+                 </div>
+                 
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner d-flex flex-row flex-wrap">
+                            <div class="card card-custom">
+                                <h2>50% offer</h2>
+                                <p>Exclusive offer on</p>
+                                <p>all Cuisines</p>
+                                <h3>ALBERTSONS..</h3>
+                            </div>
+                            <div class="card card-custom">
+                                <h2>50% offer</h2>
+                                <p>Exclusive offer on</p>
+                                <p>all Cuisines</p>
+                                <h3>ALBERTSONS..</h3>
+                            </div>
+                            <div class="card card-custom">
+                                <h2>50% offer</h2>
+                                <p>Exclusive offer on</p>
+                                <p>all Cuisines</p>
+                                <h3>ALBERTSONS..</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!--main section-->
+                    <h3 class="my-2">Recommended Restaurants</h3>
+                    <!--used same image and restaurant name next 9 card-->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 my-2">
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid rounded h-100" src="./card-img.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food Zone</h5>
+                                            <p class="card-text">4.1 rating 2.1km min-order:300</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

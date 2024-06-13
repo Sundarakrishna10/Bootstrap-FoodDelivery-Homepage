@@ -1,0 +1,63 @@
+.card-custom {
+    background-image: url('./bg-img.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    padding: 20px; 
+    margin: 10px;
+    display:inline-block;
+    
+    
+}
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.navbar .form-inline {
+    display: flex;
+    align-items: center;
+}
+.navbar .form-inline .form-control {
+    margin-right: 10px; 
+        }
+        .sidebar img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .sidebarimg{
+            width: 30px ;
+            height:30px
+
+        }
+
+        @media (max-width: 767.98px) {
+            .sidebar-horizontal .nav {
+                flex-direction: row;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .sidebar-horizontal .nav li {
+                display: inline-block;
+                margin-right: 1rem;
+            }
+        }
+        .carousel-inner {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .card-custom {
+            flex: 1 0 25%; /* This ensures each card takes up 25% of the width */
+            box-sizing: border-box;
+            padding: 10px; /* Optional: add some padding for better spacing */
+        }
+       
+    /* .sidebar-horizontal {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    } */
+     
